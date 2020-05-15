@@ -1,0 +1,86 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #5433FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#container{
+    width: 45vh;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 0.4vh rgba(0,0,0,0.1);
+    margin: 20vh auto;
+    border-radius: 2vh;
+}
+
+.completed{
+    color: grey;
+    text-decoration: line-through;
+}
+
+h1{
+    background-color: #2980b9;
+    color:white;
+    margin: 0;
+    padding: 1.2vh 2.4vh;
+    text-transform: uppercase;
+    font-size: 2.8vh;
+    font-weight: 400;
+    border-radius: 2vh 2vh 0 0;
+}
+
+.fa-plus{
+    padding-top: 0.4vh;
+    float: right;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    height: 6vh;
+    line-height: 6vh;
+    color: #666;
+}
+
+input{
+    background-color: #f7f7f7;
+    font-size: 2.5vh;
+    width: 100%;
+    padding: 1.2vh 1.2vh 1.2vh 1.8vh;
+    box-sizing: border-box;
+    color: #2980b9;
+    border: 0.4vh solid rgba(0,0,0,0);
+}
+
+input:focus{
+    background: white;
+    border: 0.4vh solid #2980b9;
+    outline: none;
+}
+
+li:nth-child(2n+1){
+    background-color: white;
+}
+
+li span{
+    background: #e74c3c;
+    height: 6vh;
+    margin-right: 3vh;
+    text-align: center;
+    color: white;
+    width: 0vh;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span{
+    width: 6vh;
+    opacity: 1;
+}
+
+li:last-child span{
+    border-radius: 0 0 0 2vh;
+}
