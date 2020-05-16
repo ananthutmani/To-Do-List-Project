@@ -61,6 +61,10 @@ li:hover span{
     opacity: 1;
 }
 
+li:last-child{
+    border-radius: 0 0 2vh 2vh;
+}
+
 li:last-child span{
     border-radius: 0 0 0 2vh;
 }
